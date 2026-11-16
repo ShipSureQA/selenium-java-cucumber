@@ -1,6 +1,8 @@
 # Selenium + Java + Cucumber BDD Framework (Demo)
 
-![Tests](https://github.com/ShipSureQA/selenium-java-cucumber/actions/workflows/tests.yml/badge.svg)
+[![Tests](https://github.com/ShipSureQA/selenium-java-cucumber/actions/workflows/tests.yml/badge.svg)](https://github.com/ShipSureQA/selenium-java-cucumber/actions/workflows/tests.yml) [![CodeQL](https://github.com/ShipSureQA/selenium-java-cucumber/actions/workflows/codeql.yml/badge.svg)](https://github.com/ShipSureQA/selenium-java-cucumber/actions/workflows/codeql.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+**📊 Live test report (updated on every run):** https://shipsureqa.github.io/selenium-java-cucumber/
 
 > **Demo / self-initiated project** by ShipSure QA. Shows how I structure a maintainable BDD automation framework. It tests [saucedemo.com](https://www.saucedemo.com), a public practice site built for test automation. It is not client work.
 
@@ -47,3 +49,17 @@ src/test/resources/
   features/   Gherkin feature files
   config.properties
 ```
+
+## Quality gates
+Every push and pull request runs:
+- **Tests:** Compile → 15 Cucumber scenarios in Chrome and Firefox
+- **CodeQL** static security analysis (weekly + on every change)
+- **Dependabot**: weekly dependency and monthly GitHub Actions update PRs
+- **Live report** published to GitHub Pages from `main`
+
+## Author
+**Nagarasu P · [ShipSure QA](https://shipsureqa.github.io)**. Senior QA automation engineer, available for freelance projects.
+
+## License
+[MIT](LICENSE)
+
