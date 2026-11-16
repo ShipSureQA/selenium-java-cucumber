@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SauceDemo BDD Suite" data-provider-thread-count="3">
+  <test name="Cucumber Scenarios">
+    <classes>
+      <class name="qa.shipsure.runners.TestRunner"/>
+    </classes>
+  </test>
+</suite>
