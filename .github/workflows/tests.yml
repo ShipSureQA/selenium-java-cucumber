@@ -40,7 +40,7 @@ jobs:
         if: ${{ !cancelled() && matrix.browser == 'chrome' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request' }}
         run: mkdir -p site && cp target/cucumber-report.html site/index.html
       - if: ${{ !cancelled() && matrix.browser == 'chrome' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request' }}
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           path: site/
 
