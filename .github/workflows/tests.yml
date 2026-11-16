@@ -27,7 +27,7 @@ jobs:
           cache: maven
       - name: Run tests (${{ matrix.browser }})
         run: mvn -B test -Dbrowser=${{ matrix.browser }} -Dheadless=true
-      - uses: actions/upload-artifact@v5
+      - uses: actions/upload-artifact@v7
         if: ${{ !cancelled() }}
         with:
           name: cucumber-report-${{ matrix.browser }}
